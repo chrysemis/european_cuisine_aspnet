@@ -9,8 +9,15 @@ namespace EuropeanFood.Models
     {
         public string RecipeName { get; set; }
         public string Description { get; set; }
-        public string RecipeImageUrl { get; set;  }
         public string[] Ingredients { get; set; }
         public string[] Method { get; set;  }
+
+        public string ImageFileName
+        {
+            get
+            {
+                return RecipeName.Replace(" ", "-").ToLower() + ".jpg";
+            }
+        }
     }
-}
+ }
