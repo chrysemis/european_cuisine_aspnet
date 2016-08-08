@@ -10,7 +10,17 @@ namespace EuropeanFood.Controllers
     {
         public ActionResult Recipe()
         {
-            return View();
+            ViewBag.RecipeName = "Just tomatoes";
+            ViewBag.Description = "<p class=\"recipe - text\" id=\"meal - information\">Tomatoes holding the place until they are replaced by something made from tomatoes.</p>";
+            ViewBag.Ingredients = new string[]
+            {
+                "1 kg tomatoes",
+                "75 g plain flour",
+                "1 tbsp breadcrumbs (optional)",
+                "1 cloves of garlic, pressed",
+                "Olive oil"
+            };
+             return View();
         }
     }
 }
