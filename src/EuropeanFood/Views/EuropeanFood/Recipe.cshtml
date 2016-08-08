@@ -25,6 +25,12 @@
     <h2>@recipeName</h2>
         <p>@Html.Raw(description)</p>
         <h2>Ingredients:</h2>
+        <ul>
+            @foreach (var ingredient in ingredients)
+            {
+                <li>@ingredient</li>
+            }
+        </ul>
     </div>
 </body>
 </html>
