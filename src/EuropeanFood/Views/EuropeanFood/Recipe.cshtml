@@ -1,16 +1,9 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Tomatoes Recipe";
 
  }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
     <div>
     <h2>@ViewBag.RecipeName</h2>
         <p>@Html.Raw(ViewBag.Description)</p>
@@ -22,5 +15,3 @@
             }
         </ul>
     </div>
-</body>
-</html>

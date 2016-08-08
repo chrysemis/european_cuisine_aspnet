@@ -1,17 +1,54 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
-    <div>
-    
-    </div>
+    <header></header>
+
+    <div id="content">
+        <p class="recipe-text" id="meal-information">Tomatoes holding the place until they are replaced by something made from tomatoes.</p>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <img src="../images/tomatoes.jpg" alt="Tomatoes" />
+                </div> <!--col-->
+                <div class="col-md-6">
+                    @RenderBody();
+                </div>  <!--col-->
+            </div>  <!--row-->
+        </div> <!--container-fluid-->
+
+        <div class="recipe">
+            <h2 class="clear">Method:</h2>
+            <ol>
+                <li>Chop tomatoes.</li>
+                <li>Mix tomatoes with all else.</li>
+                <li>Cook tomatoes.</li>
+                <li>Serve tomatoes.</li>
+            </ol>
+        </div>
+    </div> <!--content-->
+
+    <footer>
+        <div id="todaysDate"></div>
+        <div id="copyright">&copy; Bratislava food @DateTime.Now.Year</div>
+    </footer>
+
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/footer-info.js"></script>
+    <script src="../js/toggle-list.js"></script>
+
 </body>
 </html>
+
+
