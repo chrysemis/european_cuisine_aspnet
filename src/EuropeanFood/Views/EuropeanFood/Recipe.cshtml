@@ -1,17 +1,25 @@
-﻿@{
+﻿@model EuropeanFood.Models.Recipe
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Tomatoes Recipe";
 
  }
 
     <div>
-    <h2>@ViewBag.RecipeName</h2>
-        <p>@Html.Raw(ViewBag.Description)</p>
+    <h2>@Model.RecipeName</h2>
+        <p>@Html.Raw(Model.Description)</p>
         <h2>Ingredients:</h2>
         <ul>
-            @foreach (var ingredient in ViewBag.Ingredients)
+            @foreach (var ingredient in Model.Ingredients)
             {
                 <li>@ingredient</li>
             }
         </ul>
+        <ol>
+            @foreach (var step in Model.MethodSteps)
+            {
+                <li>@step</li>
+            }
+        </ol>
     </div>

@@ -107,7 +107,7 @@
     <Content Include="images\pot-fritters.jpg" />
     <Content Include="images\rum-balls.jpg" />
     <Content Include="images\SearchZoom.png" />
-    <Content Include="images\tomatoes.jpg" />
+    <Content Include="images\just-tomatoes.jpg" />
     <Content Include="images\zoom-search.png" />
     <Content Include="js\alphabet-order.js" />
     <Content Include="js\amounts-calculation.js" />

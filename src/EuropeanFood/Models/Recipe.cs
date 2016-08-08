@@ -10,7 +10,7 @@ namespace EuropeanFood.Models
         public string RecipeName { get; set; }
         public string Description { get; set; }
         public string[] Ingredients { get; set; }
-        public string[] Method { get; set;  }
+        public string[] MethodSteps { get; set;  }
 
         public string ImageFileName
         {
