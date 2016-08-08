@@ -89,7 +89,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\bean-veg-soup-large.jpg" />
+    <Content Include="images\bean-veg-soup.jpg" />
+    <Content Include="images\bosnian-soup.jpg" />
+    <Content Include="images\breaded-mushrooms.jpg" />
+    <Content Include="images\caraway-bread.jpg" />
+    <Content Include="images\chicken-perkelt-large.jpg" />
+    <Content Include="images\goulash.jpg" />
+    <Content Include="images\lentil-soup-large.jpg" />
+    <Content Include="images\lentil-soup.jpg" />
+    <Content Include="images\nav-icon-transp.png" />
+    <Content Include="images\nav-icon.png" />
+    <Content Include="images\poppych-strudel.jpg" />
+    <Content Include="images\pot-fritters-large.jpg" />
+    <Content Include="images\pot-fritters.jpg" />
+    <Content Include="images\rum-balls.jpg" />
+    <Content Include="images\SearchZoom.png" />
+    <Content Include="images\tomatoes.jpg" />
+    <Content Include="images\zoom-search.png" />
+    <Content Include="js\alphabet-order.js" />
+    <Content Include="js\amounts-calculation.js" />
+    <Content Include="js\check-login-email.js" />
+    <Content Include="js\DOM.js" />
+    <Content Include="js\footer-info.js" />
+    <Content Include="js\goodbye.js" />
+    <Content Include="js\home.js" />
+    <Content Include="js\jquery-3.1.0.min.js" />
+    <Content Include="js\login.js" />
+    <Content Include="js\logout.js" />
+    <Content Include="js\page-loader.js" />
+    <Content Include="js\recipes-amounts-form.js" />
+    <Content Include="js\register.js" />
+    <Content Include="js\signup.js" />
+    <Content Include="js\tinysort-plugin.js" />
+    <Content Include="js\toggle-list.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +139,9 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\EuropeanFood\Recipe.cshtml" />
+    <Content Include="images\nav-icon-transp.xcf" />
+    <Content Include="images\nav-icon.xcf" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
