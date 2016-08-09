@@ -11,7 +11,7 @@ namespace EuropeanFood.Controllers
     {
         public ActionResult Recipe()
         {
-            var recipe = new Recipe()
+           var recipe = new Recipe()
             {
                 RecipeName = "Just Tomatoes",
                 Description = "Tomatoes holding the place until they are replaced by something made from tomatoes.",

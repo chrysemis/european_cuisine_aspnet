@@ -6,20 +6,36 @@
 
  }
 
-    <div>
-    <h2>@Model.RecipeName</h2>
-        <p>@Html.Raw(Model.Description)</p>
-        <h2>Ingredients:</h2>
-        <ul>
-            @foreach (var ingredient in Model.Ingredients)
+<h2>@Model.RecipeName</h2>
+<p class="recipe-text" id="meal-information">@Html.Raw(Model.Description)</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <img src="../images/@Model.ImageFileName" alt="@Model.RecipeName" />
+        </div> <!--col-->
+        <div class="col-md-6">
+            <h2>Ingredients:</h2>
+            <ul>
+                @foreach (var ingredient in Model.Ingredients)
+                {
+                    <li>@ingredient</li>
+                }
+            </ul>
+        </div>  <!--col-->
+    </div>  <!--row-->
+</div> <!--container-fluid-->
+
+<div class="recipe">
+    <h2 class="clear">Method:</h2>
+    <ol>
+        @foreach (var step in Model.MethodSteps)
             {
-                <li>@ingredient</li>
+            <li>@step</li>
             }
-        </ul>
-        <ol>
-            @foreach (var step in Model.MethodSteps)
-            {
-                <li>@step</li>
-            }
-        </ol>
-    </div>
+    </ol>
+</div>  
+
+   
+        
+   

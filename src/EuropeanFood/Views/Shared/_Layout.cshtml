@@ -11,26 +11,45 @@
 </head>
 
 <body>
-    <header></header>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">European Cuisine</a>
+                </div> <!--navbar-header-->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Recipes
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tomatoes.html">Tomatoes</a></li>
+                                <li><a href="#">Soups</a></li>
+                                <li><a href="#">Meatlovers</a></li>
+                                <li><a href="#">Vegetarian</a></li>
+                                <li><a href="#">Bread and pastry</a></li>
+                                <li><a href="#">Sweets</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ingredients-list.html">Ingredients</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div> <!--navbar-collapse-->
+            </div> <!--cont-fluid-->
+        </nav>
+    </div>
 
     <div id="content">
-        <p class="recipe-text" id="meal-information">Tomatoes holding the place until they are replaced by something made from tomatoes.</p>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <img src="../images/tomatoes.jpg" alt="Tomatoes" />
-                </div> <!--col-->
-                <div class="col-md-6">
-                    @RenderBody();
-                </div>  <!--col-->
-            </div>  <!--row-->
-        </div> <!--container-fluid-->
-
-        <div class="recipe">
-            <h2 class="clear">Method:</h2>
-            
-        </div>
+        @RenderBody()
     </div> <!--content-->
 
     <footer>
