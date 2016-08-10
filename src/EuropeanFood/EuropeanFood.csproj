@@ -144,6 +144,7 @@
     <Content Include="images\nav-icon-transp.xcf" />
     <Content Include="images\nav-icon.xcf" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\EuropeanFood\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

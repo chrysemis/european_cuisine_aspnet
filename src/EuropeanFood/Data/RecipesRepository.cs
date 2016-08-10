@@ -75,6 +75,11 @@ namespace EuropeanFood.Data
 
     };
 
+        public Recipe[] GetRecipes()
+        {
+            return _recipes;
+        }
+
         public Recipe GetRecipe(int id)
         {
             Recipe recipeToReturn = null;

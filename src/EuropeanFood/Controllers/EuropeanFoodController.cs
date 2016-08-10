@@ -1,4 +1,5 @@
-﻿using EuropeanFood.Models;
+﻿using EuropeanFood.Data;
+using EuropeanFood.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,32 +10,24 @@ namespace EuropeanFood.Controllers
 {
     public class EuropeanFoodController : Controller
     {
-        public ActionResult Recipe()
+        private RecipesRepository _recipesRepository = null;
+        
+        public EuropeanFoodController()
         {
-            var recipe = new Recipe()
-            {
-                Id = 1,
-                RecipeName = "Just Tomatoes",
-                Description = "Tomatoes holding the place until they are replaced by something made from tomatoes.",
-                Ingredients = new string[]
-                {
-                    "1 kg tomatoes",
-                "75 g plain flour",
-                "1 tbsp breadcrumbs (optional)",
-                "1 cloves of garlic, pressed",
-                "Olive oil"
-                },
-                MethodSteps = new string[]
-                {
-                    "Chop tomatoes.",
-                    "Mix tomatoes with all else.",
-                    "Cook tomatoes.",
-                    "Serve tomatoes."
-                }
-    };
+            //constructor
+            _recipesRepository = new RecipesRepository();
+        } 
 
-          
-             return View(recipe);
+        public ActionResult Index()
+        {
+            var recipes = _recipesRepository.GetRecipes();
+            return View(recipes);
+        }
+
+        public ActionResult Recipe(int id)
+        { 
+            var recipe = _recipesRepository.GetRecipe(id);
+            return View(recipe);
         }
     }
 }
